@@ -24,8 +24,13 @@
   "keywords": [
     "gatsby"
   ],
+  "prettier": {
+    "printWidth": 80
+  },
   "license": "MIT",
   "scripts": {
+    "prettier:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx}\"",
+    "prettier:write": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
