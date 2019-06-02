@@ -1,3 +1,32 @@
+# Sailing Hello World Website
+
+This contains the Sailing Hello World Website gatsby files.
+
+Site is automatically deployed to (https://sailing-hello-world.netlify.com/)[https://sailing-hello-world.netlify.com/]
+on each commit to master.
+
+## Hacking
+
+Start the local development environment:
+
+```bash
+$ yarn develop
+```
+
+Check for formatter errors:
+
+```bash
+$ yarn prettier:check
+```
+
+Actually fix them:
+
+```bash
+$ yarn prettier:write
+```
+
+# Old Gatsby README below
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
@@ -95,3 +124,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+```
+
+```
