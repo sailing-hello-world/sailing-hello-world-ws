@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@types/react-helmet": "^5.0.8",
+    "gatsby-source-sanity": "^4.0.1",
     "prettier": "^1.17.1",
     "typescript": "^3.5.1"
   },
