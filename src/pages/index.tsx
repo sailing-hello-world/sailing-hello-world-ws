@@ -45,7 +45,12 @@ const IndexPage = ({ data }: any) => {
 
       <h1>Blog posts</h1>
       {data.allSanityPost.edges.map(({ node }: any) => {
-        return <h1 key={node.id}>{node.title}</h1>;
+        return (
+          <div key={node.id}>
+            <h1>{node.title}</h1>
+            <img src={node.author.image.asset.fixed.src} />
+          </div>
+        );
       })}
       <h2 />
     </Layout>
