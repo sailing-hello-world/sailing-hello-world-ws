@@ -6,6 +6,8 @@
   "author": "Håkon Åmdal <hakon@aamdal.com>",
   "repository": "git@github.com:sailing-hello-world/sailing-hello-world-ws.git",
   "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.12",
     "gatsby": "^2.8.2",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-react-helmet": "^3.0.12",
@@ -15,7 +17,8 @@
     "gatsby-transformer-sharp": "^2.1.21",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "sharp": "^0.22.1"
   },
   "devDependencies": {
     "@types/react-helmet": "^5.0.8",

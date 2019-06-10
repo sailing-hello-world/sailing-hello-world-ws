@@ -1,9 +1,8 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
-
-import Layout from "../components/layout";
-import Image from "../components/image";
-import Helmet from "../components/helmet";
+import Img from "gatsby-image";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import PageWideSection from "../ui/PageWideSection";
 
 export const query = graphql`
   query BlogPostQuery {
@@ -27,6 +26,13 @@ export const query = graphql`
         }
       }
     }
+    file(relativePath: { eq: "bobby-burch-319840-unsplash.jpg" }) {
+      childImageSharp {
+        fluid(rotate: 360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `;
 
@@ -34,15 +40,9 @@ const IndexPage = ({ data }: any) => {
   console.log(data);
   return (
     <Layout>
-      <Helmet />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
-      <Link to="/page-2/">Go to page 2</Link>
-
+      <PageWideSection height={400}>
+        <Img fluid={data.file.childImageSharp.fluid} />
+      </PageWideSection>
       <h1>Blog posts</h1>
       {data.allSanityPost.edges.map(({ node }: any) => {
         return (
@@ -52,7 +52,6 @@ const IndexPage = ({ data }: any) => {
           </div>
         );
       })}
-      <h2 />
     </Layout>
   );
 };
