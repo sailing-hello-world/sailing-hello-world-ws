@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./Navbar.style";
-import Sun from "../svg/sun";
+import Sun from "../svg/Sun";
 
 const Navbar = () => (
   <S.Navbar>
