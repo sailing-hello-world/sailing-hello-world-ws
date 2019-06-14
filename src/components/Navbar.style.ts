@@ -20,7 +20,22 @@ export const Title = styled.div`
   font-weight: 600;
   color: ${blue};
   font-size: 36px;
-  margin-top: 30px;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  width: 500px;
 `;
 
 export const Logo = styled.div``;
+
+export const Menu = styled.nav`
+  font-family: Nunito;
+  color: ${blue};
+  font-size: 20px;
+  align-self: flex-end;
+  margin-bottom: 15px;
+  a {
+    color: inherit;
+    text-decoration: none;
+    margin: 10px;
+  }
+`;
