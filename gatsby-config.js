@@ -20,7 +20,7 @@ module.exports = {
         projectId: "mg9bcl14",
         dataset: "production",
         token: process.env.SANITY_READ_TOKEN,
-        watchMode: !isProd,
+        watchMode: true,
         overlayDrafts: !isProd
       }
     },
