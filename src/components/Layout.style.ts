@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
 export const globalStyle = css`
-  @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+  @import url("https://fonts.googleapis.com/css?family=Montserrat|Nunito&display=swap");
   html,
   body {
     margin: 0;
@@ -16,4 +16,5 @@ export const globalStyle = css`
 export const MainContainer = styled.div`
   display: grid;
   grid-template-rows: 100px auto;
+  font-family: "Nunito", sans-serif;
 `;
