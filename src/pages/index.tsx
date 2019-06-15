@@ -38,7 +38,6 @@ export const query = graphql`
 `;
 
 const IndexPage = ({ data }: any) => {
-  console.log(data);
   return (
     <Layout>
       <ColumnSection>
