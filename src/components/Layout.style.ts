@@ -10,10 +10,17 @@ export const globalStyle = css`
     height: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    > div {
+      height: 100%;
+      > div {
+        height: 100%;
+      }
+    }
   }
 `;
 
 export const MainContainer = styled.div`
+  height: 100%;
   display: grid;
   grid-template-rows: 100px auto;
   font-family: "Nunito", sans-serif;

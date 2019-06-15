@@ -8,9 +8,9 @@ const Navbar = () => (
     <S.NavbarInner>
       <S.Title>Hello World</S.Title>
       <S.Menu>
-        <Link to="">Blog</Link>
-        <Link to="map">Map</Link>
-        <Link to="about">About</Link>
+        <Link to="/">Blog</Link>
+        <Link to="/map/">Map</Link>
+        <Link to="/about/">About</Link>
       </S.Menu>
       <S.Logo>
         <Sun height={150} width={150} />
